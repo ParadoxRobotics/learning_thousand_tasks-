@@ -1,0 +1,2 @@
+# All dependencies are installed in the Dockerfile
+# This file exists for setup.py compatibility
