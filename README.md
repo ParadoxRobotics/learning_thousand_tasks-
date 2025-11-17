@@ -1,9 +1,26 @@
-# Learning a Thousand Tasks in a Day
+<h1 align="center">Learning a Thousand Tasks in a Day</h1>
+
+<p align="center">
+  Kamil Dreczkowski*<sup>1</sup>, Pietro Vitiello*<sup>1</sup>, Vitalis Vosylius<sup>1</sup>, Edward Johns<sup>1</sup>
+</p>
+
+<p align="center">
+  <sup>*</sup>These authors contributed equally to this work.
+</p>
+
+<p align="center">
+  <sup>1</sup>Imperial College London
+</p>
+
+<p align="center">
+  <img src="assets/videos/cover_and_montage.gif" alt="Learning a Thousand Tasks" width="100%">
+</p>
 
 This repository contains the implementation of all methods evaluated in the paper "Learning a Thousand Tasks in a Day". We provide model architectures, training scripts, and deployment examples.
 
 Paper published on **Science Robotics**: https://www.science.org/doi/10.1126/scirobotics.adv7594
-<br>Website: https://www.robot-learning.uk/learning-1000-tasks
+<br>Paper published on **Arxiv**: https://arxiv.org/abs/2511.10110
+<br>**Project Website**: https://www.robot-learning.uk/learning-1000-tasks
 
 ## Overview
 
@@ -409,3 +426,20 @@ Where T = number of timesteps (e.g., 179 frames at 30Hz = ~6 seconds)
 * Bottleneck Pose: This is the alignment pose. It is just a pose suitable for the upcoming manipulation. Typically, the closer to the target object, the better.
 
 * Segmentation: The workspace segmentation (`head_camera_ws_segmap.npy`) must be computed before using the demonstrations. We used LangSAM with language prompts in our experiments, but any segmentation method (SAM, manual annotation, etc.) can be used. For BC training, run `make preprocess_demos` to generate per-timestep masks via XMem tracking.
+
+## Citation
+
+If you find our code useful, please consider citing:
+```bibtex
+@article{doi:10.1126/scirobotics.adv7594,
+  author = {Kamil Dreczkowski and Pietro Vitiello and Vitalis Vosylius and Edward Johns},
+  title = {Learning a Thousand Tasks in a Day},
+  journal = {Science Robotics},
+  volume = {10},
+  number = {108},
+  pages = {eadv7594},
+  year = {2025},
+  doi = {10.1126/scirobotics.adv7594},
+  url = {https://www.science.org/doi/abs/10.1126/scirobotics.adv7594}
+}
+```
