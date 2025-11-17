@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/videos/cover_and_montage.gif" alt="Learning a Thousand Tasks" width="100%">
+  <img src="assets/videos/cover_and_montage_lower_res.gif" alt="Learning a Thousand Tasks" width="80%">
 </p>
 
 This repository contains the implementation of all methods evaluated in the paper "Learning a Thousand Tasks in a Day". We provide model architectures, training scripts, and deployment examples.
